@@ -1,4 +1,6 @@
-// SwiftUI Garden, https://swiftui-garden.com/
+// » SwiftUI Garden
+// » https://swiftui-garden.com/Views/Button/Custom+Button+Styles
+// » https://github.com/ralfebert/swiftui-garden/blob/main/Views/Button/ModifiedButtonStyleExample.swift
 
 import SwiftUI
 
@@ -12,11 +14,9 @@ struct TypewriterButtonStyle: PrimitiveButtonStyle {
 }
 
 extension PrimitiveButtonStyle where Self == TypewriterButtonStyle {
-
     static var typewriter: TypewriterButtonStyle {
         TypewriterButtonStyle()
     }
-
 }
 
 struct ModifiedButtonStyleExample: View {

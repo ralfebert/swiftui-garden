@@ -1,4 +1,6 @@
-// SwiftUI Garden, https://swiftui-garden.com/
+// » SwiftUI Garden
+// » https://swiftui-garden.com/Views/Button/Button+Styles
+// » https://github.com/ralfebert/swiftui-garden/blob/main/Views/Button/ButtonStylesView.swift
 
 import SwiftUI
 
@@ -35,8 +37,6 @@ struct ButtonStylesView: View {
                     .buttonStyle(.glassProminent)
             }
         }
-        .navigationTitle(".buttonStyle()")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

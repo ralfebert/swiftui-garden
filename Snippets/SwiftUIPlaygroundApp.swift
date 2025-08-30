@@ -7,7 +7,7 @@ struct SwiftUIPlaygroundApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                CustomButtonStylePreview()
+                CustomButtonStyleView()
             }
         }
     }

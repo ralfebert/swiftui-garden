@@ -1,0 +1,2 @@
+* Always read `/Overview.md` and `docs/Project structure and automation` before starting work
+* Keep all communication and documentation briefly and concise. Write answers for a software developer with 10+ years experience, don't explain or comment trivial code.

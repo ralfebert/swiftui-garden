@@ -1,8 +1,9 @@
-// SwiftUI Garden, https://swiftui-garden.com/
+// » SwiftUI Garden
+// » https://swiftui-garden.com/Views/Button/Custom+Button+Styles
+// » https://github.com/ralfebert/swiftui-garden/blob/main/Views/Button/CustomButtonStyleView.swift
 
 import SwiftUI
 
-// <snip>
 struct FunkyButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
@@ -22,11 +23,9 @@ struct FunkyButtonStyle: ButtonStyle {
 }
 
 extension ButtonStyle where Self == FunkyButtonStyle {
-
     static var funky: FunkyButtonStyle {
         FunkyButtonStyle()
     }
-
 }
 
 struct CustomButtonStyleView: View {
@@ -36,20 +35,6 @@ struct CustomButtonStyleView: View {
     }
 }
 
-// </snip>
-
-struct CustomButtonStylePreview: View {
-    var body: some View {
-        NavigationStack {
-            VStack {
-                CustomButtonStyleView()
-            }
-            .navigationTitle("Custom Button Style")
-            .navigationBarTitleDisplayMode(.inline)
-        }
-    }
-}
-
 #Preview {
-    CustomButtonStylePreview()
+    CustomButtonStyleView()
 }

@@ -12,7 +12,11 @@ co:
     fork commit
 
 FORMATTER_OPTIONS := "--swiftversion 5.10 --disable preferForLoop,unusedArguments,blankLinesAtStartOfScope,blankLinesAtEndOfScope,andOperator,redundantSelf,redundantStaticSelf,redundantInternal,preferKeyPath,redundantLet,swiftTestingTestCaseNames"
-FORMATTER_HEADER := '--header "SwiftUI Garden, https://swiftui-garden.com/"'
 
 format:
-	swiftformat {{FORMATTER_OPTIONS}} {{FORMATTER_HEADER}} Views Snippets Animations
+	swiftformat {{FORMATTER_OPTIONS}} Views Snippets Animations
+
+sync:
+	just format
+	ruby tools/update-xcode-to-md.rb
+	just format

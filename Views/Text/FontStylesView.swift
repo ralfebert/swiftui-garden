@@ -1,4 +1,6 @@
-// SwiftUI Garden, https://swiftui-garden.com/
+// » SwiftUI Garden
+// » https://swiftui-garden.com/Views/Text/Font+Styles
+// » https://github.com/ralfebert/swiftui-garden/blob/main/Views/Text/FontStylesView.swift
 
 import SwiftUI
 
@@ -38,13 +40,9 @@ struct FontStylesView: View {
             Text(".caption2 11pt")
                 .font(.caption2)
         }
-        .navigationTitle(".font()")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 #Preview {
-    NavigationStack {
-        FontStylesView()
-    }
+    FontStylesView()
 }

@@ -1,8 +1,14 @@
-A button style, built from scratch around the Button Label using modifiers, can be defined and then re-used throughout many Views by defining it as `ButtonStyle`:
+A `ButtonStyle` is a reusable definition of the look and feel of a custom button. It's passed a configuration with the button label and returns the View for the button:
 
 ![[customButtonStyle.1.png|300]]
 
 ```swift
+// » SwiftUI Garden
+// » https://swiftui-garden.com/Views/Button/Custom+Button+Styles
+// » https://github.com/ralfebert/swiftui-garden/blob/main/Views/Button/CustomButtonStyleView.swift
+
+import SwiftUI
+
 struct FunkyButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
@@ -29,15 +35,19 @@ extension ButtonStyle where Self == FunkyButtonStyle {
 
 struct CustomButtonStyleView: View {
     var body: some View {
-        Button("roll", systemImage: "dice") {}
+        Button("Roll", systemImage: "dice") {}
             .buttonStyle(.funky)
     }
+}
+
+#Preview {
+    CustomButtonStyleView()
 }
 ```
 
 ## Button Styles with custom gestures
 
-The interaction behaviour / gestures for the button can also be defined from scratch and then made available as a `PrimitiveButtonStyle`([Example: ](https://www.avanderlee.com/swiftui/swiftui-button-styles/#defining-both-a-custom-button-style-and-interaction))
+`PrimitiveButtonStyle` is even more customizable and allows to define the interaction behaviour / gestures for the button from scratch. [Example](https://www.avanderlee.com/swiftui/swiftui-button-styles/#defining-both-a-custom-button-style-and-interaction)
 
 ## Modifying existing button styles
 
@@ -46,6 +56,12 @@ The system-defined [[Button Styles]] can be extended by forwarding the implement
 ![[modifiedButtonStyle.1.png|300]]
 
 ```swift
+// » SwiftUI Garden
+// » https://swiftui-garden.com/Views/Button/Custom+Button+Styles
+// » https://github.com/ralfebert/swiftui-garden/blob/main/Views/Button/ModifiedButtonStyleExample.swift
+
+import SwiftUI
+
 struct TypewriterButtonStyle: PrimitiveButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         BorderedProminentButtonStyle()
@@ -63,8 +79,12 @@ extension PrimitiveButtonStyle where Self == TypewriterButtonStyle {
 
 struct ModifiedButtonStyleExample: View {
     var body: some View {
-        Button("roll", systemImage: "dice") {}
+        Button("Roll", systemImage: "dice") {}
             .buttonStyle(.typewriter)
     }
+}
+
+#Preview {
+    ModifiedButtonStyleExample()
 }
 ```
