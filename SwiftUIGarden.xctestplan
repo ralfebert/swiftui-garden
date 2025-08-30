@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "A86DE9B2-4612-4A0D-9FA0-E3266D72FA28",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:SwiftUIGarden.xcodeproj",
+      "identifier" : "BF8795522E3E890D008E3E3E",
+      "name" : "SwiftUIGarden"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:SwiftUIGarden.xcodeproj",
+        "identifier" : "BF8A63762E63554C00BDB3F9",
+        "name" : "SwiftUIGardenTests"
+      }
+    }
+  ],
+  "version" : 1
+}
