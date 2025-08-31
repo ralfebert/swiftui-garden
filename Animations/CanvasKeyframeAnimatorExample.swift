@@ -1,4 +1,6 @@
-// SwiftUI Garden, https://swiftui-garden.com/
+// » SwiftUI Garden
+// » https://swiftui-garden.com/Animations/SwiftUI+Animations
+// » https://github.com/ralfebert/swiftui-garden/blob/main/Animations/CanvasKeyframeAnimatorExample.swift
 
 import SwiftUI
 

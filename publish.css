@@ -1,0 +1,7 @@
+.video-embed {
+	max-width: 300px;
+}
+
+video {
+	border: 1px solid gray;
+}

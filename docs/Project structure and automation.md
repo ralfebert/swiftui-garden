@@ -1,6 +1,6 @@
 * The project is both an Obsidian Vault and Xcode project.
 * The Xcode project contains stand-alone example code snippets for SwiftUI Views.
-* Screenshots of Views can be generated via `SwiftUIGardenTests` (that uses Swift Testing and the [swift-snapshot-testing](https://github.com/pointfreeco/swift-snapshot-testing) package to generate screenshots that can be auto-updated)
+* Screenshots can be captured using unit tests, see [[Capturing screenshots]]
 * The Obsidian Vault is used to write content pages using Markdown, code snippets from the Xcode project can be embedded and are auto-updated:
 
 	Run `just sync` to automatically update code examples in markdown files from the corresponding Swift source files.
