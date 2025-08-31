@@ -1,3 +1,5 @@
+<a href="https://github.com/ralfebert/swiftui-garden/edit/main/Animations/Animating%20value%20changes.md"><em>edit ✏️</em></a>
+
 When a value changes that a View depends on, there are three different approaches to animate the change:
 
 a) Wrap the value change in a `withAnimation {}` block:

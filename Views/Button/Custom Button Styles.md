@@ -1,3 +1,5 @@
+<a href="https://github.com/ralfebert/swiftui-garden/edit/main/Views/Button/Custom%20Button%20Styles.md"><em>edit ✏️</em></a>
+
 A `ButtonStyle` is a reusable definition of the look and feel of a custom button. It's passed a configuration with the button label and returns the View for the button:
 
 ![[customButtonStyle.1.png|300]]

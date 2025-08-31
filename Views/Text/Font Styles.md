@@ -1,3 +1,4 @@
+<a href="https://github.com/ralfebert/swiftui-garden/edit/main/Views/Text/Font%20Styles.md"><em>edit ✏️</em></a>
 
 | Style                                |                       |
 | ------------------------------------ | --------------------- |

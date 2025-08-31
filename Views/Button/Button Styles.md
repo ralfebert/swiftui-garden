@@ -1,3 +1,5 @@
+<a href="https://github.com/ralfebert/swiftui-garden/edit/main/Views/Button/Button%20Styles.md"><em>edit ✏️</em></a>
+
 | Style                                        |                                                           |
 | -------------------------------------------- | --------------------------------------------------------- |
 | ![[buttonStyles.borderless.png\|200]]        | `.buttonStyle(.automatic)`<br>`.buttonStyle(.borderless)` |
