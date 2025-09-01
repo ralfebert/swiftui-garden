@@ -14,7 +14,7 @@
 
 ```swift
 // » SwiftUI Garden
-// » https://swiftui-garden.com/Views/Text/Font+Styles
+// » https://swiftui-garden.com/Views/Text/Font-Styles
 // » https://github.com/ralfebert/swiftui-garden/blob/main/Views/Text/FontStylesView.swift
 
 import SwiftUI

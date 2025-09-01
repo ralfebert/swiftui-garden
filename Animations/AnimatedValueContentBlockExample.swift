@@ -1,5 +1,5 @@
 // » SwiftUI Garden
-// » https://swiftui-garden.com/Animations/Animating+value+changes
+// » https://swiftui-garden.com/Animations/Animating-value-changes
 // » https://github.com/ralfebert/swiftui-garden/blob/main/Animations/AnimatedValueContentBlockExample.swift
 
 import SwiftUI

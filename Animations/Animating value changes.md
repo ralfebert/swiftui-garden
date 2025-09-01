@@ -6,7 +6,7 @@ a) Apply the animated view modifiers selectively inside a view-modifiying-block 
 
 ```swift
 // » SwiftUI Garden
-// » https://swiftui-garden.com/Animations/Animating+value+changes
+// » https://swiftui-garden.com/Animations/Animating-value-changes
 // » https://github.com/ralfebert/swiftui-garden/blob/main/Animations/AnimatedValueContentBlockExample.swift
 
 import SwiftUI
@@ -45,7 +45,7 @@ b) Use the `.animation()` modifier to trigger an animation when a value changes:
 
 ```swift
 // » SwiftUI Garden
-// » https://swiftui-garden.com/Animations/Animating+value+changes
+// » https://swiftui-garden.com/Animations/Animating-value-changes
 // » https://github.com/ralfebert/swiftui-garden/blob/main/Animations/AnimatedValueExample.swift
 
 import SwiftUI
@@ -84,7 +84,7 @@ Watch out for this potentially-surprising-behaviour: Inside the View that is mod
 
 ```swift
 // » SwiftUI Garden
-// » https://swiftui-garden.com/Animations/Animating+value+changes
+// » https://swiftui-garden.com/Animations/Animating-value-changes
 // » https://github.com/ralfebert/swiftui-garden/blob/main/Animations/AnimatedValueGotchaExample.swift
 
 import SwiftUI
@@ -126,7 +126,7 @@ c) Wrap the value change in a `withAnimation {}` block (it's best to avoid this 
 
 ```swift
 // » SwiftUI Garden
-// » https://swiftui-garden.com/Animations/Animating+value+changes
+// » https://swiftui-garden.com/Animations/Animating-value-changes
 // » https://github.com/ralfebert/swiftui-garden/blob/main/Animations/WithAnimationExample.swift
 
 import SwiftUI

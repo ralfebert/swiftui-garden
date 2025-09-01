@@ -22,11 +22,11 @@
 #
 # ```
 # // » SwiftUI Garden
-# // » https://swiftui-garden.com/Views/Button/Custom+Button+Styles
+# // » https://swiftui-garden.com/Views/Button/Custom-Button-Styles
 # // » https://github.com/ralfebert/swiftui-garden/blob/main/Views/Button/CustomButtonStyleView.swift
 # ```
 #
-# To build the swiftui-garden.com URL, use the path of the markdown file, remove the .md extension, replace spaces in filenames with `+`.
+# To build the swiftui-garden.com URL, use the path of the markdown file, remove the .md extension, replace spaces in filenames with `-`.
 # To build the github URL, use the filename of the swift example code.
 #
 # 6. Replace the full code block in the markdown file with the complete contents from the `.swift` file (including the updated preamble from step 5).
@@ -75,7 +75,7 @@ end
 
 def build_swiftui_garden_url(md_file_path, project_root)
   relative_path = Pathname.new(md_file_path).relative_path_from(Pathname.new(project_root))
-  url_path = relative_path.to_s.gsub(/\.md$/, '').gsub(' ', '+')
+  url_path = relative_path.to_s.gsub(/\.md$/, '').gsub(' ', '-')
   "https://swiftui-garden.com/#{url_path}"
 end
 

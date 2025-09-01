@@ -1,5 +1,5 @@
 // » SwiftUI Garden
-// » https://swiftui-garden.com/Views/Button/Button+Styles
+// » https://swiftui-garden.com/Views/Button/Button-Styles
 // » https://github.com/ralfebert/swiftui-garden/blob/main/Views/Button/ButtonStylesView.swift
 
 import SwiftUI

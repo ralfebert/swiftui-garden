@@ -4,7 +4,7 @@ A `ButtonStyle` is a reusable definition of the look and feel of a custom button
 
 ```swift
 // » SwiftUI Garden
-// » https://swiftui-garden.com/Views/Button/Custom+Button+Styles
+// » https://swiftui-garden.com/Views/Button/Custom-Button-Styles
 // » https://github.com/ralfebert/swiftui-garden/blob/main/Views/Button/CustomButtonStyleView.swift
 
 import SwiftUI
@@ -57,7 +57,7 @@ The system-defined [[Button Styles]] can be extended by forwarding the implement
 
 ```swift
 // » SwiftUI Garden
-// » https://swiftui-garden.com/Views/Button/Custom+Button+Styles
+// » https://swiftui-garden.com/Views/Button/Custom-Button-Styles
 // » https://github.com/ralfebert/swiftui-garden/blob/main/Views/Button/ModifiedButtonStyleExample.swift
 
 import SwiftUI
