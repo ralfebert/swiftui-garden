@@ -1,5 +1,3 @@
-<div id="pageinfo"><img src="re.png" width="32" height="32"> <a href="https://ralfebert.com">Ralf Ebert</a> <a href="https://github.com/ralfebert/swiftui-garden/edit/main/Views/Text/Font%20Styles.md">✏️ edit</a></div>
-
 | Style                                |                       |
 | ------------------------------------ | --------------------- |
 | ![[fontStyles.largeTitle.png\|250]]  | `.font(.largeTitle)`  |
