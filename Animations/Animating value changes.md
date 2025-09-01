@@ -79,7 +79,7 @@ struct AnimatedValueExample: View {
 }
 ```
 
-This comes with a gotcha: The animation modifier will apply the animation to all value changes that happen in the same "view update cycle" inside the View that is modified by `.animation()`. When other values change at the same time, these will be animated as well:
+Watch out for this quirk: Inside the View that is modified by `.animation()`, all changes that happen in the same "view update cycle" caused by the value change, will be animated. Meaning, when other values change at the same time, these will be animated as well:
 
 ![[AnimatedValueGotchaExample.mp4]]
 
