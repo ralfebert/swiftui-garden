@@ -120,6 +120,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: "github", link: "https://github.com/ralfebert/swiftui-garden/" },
+      { icon: "mastodon", link: "https://mastodon.social/@swiftuigarden" },
     ],
   },
 });
