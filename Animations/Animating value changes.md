@@ -1,6 +1,6 @@
 <a href="https://github.com/ralfebert/swiftui-garden/edit/main/Animations/Animating%20value%20changes.md"><em>edit ✏️</em></a>
 
-When a value changes that a View depends on, there are three different approaches to animate the change:
+For visual changes that are triggered by a changing value in a View, there are three different approaches to animate the change:
 
 a) Wrap the value change in a `withAnimation {}` block:
 
@@ -79,7 +79,7 @@ struct AnimatedValueExample: View {
 }
 ```
 
-Watch out for this quirk: Inside the View that is modified by `.animation()`, all changes that happen in the same "view update cycle" caused by the value change, will be animated. Meaning, when other values change at the same time, these will be animated as well:
+Watch out for this quirk: Inside the View that is modified by `.animation()`, all changes that happen in the same "view update cycle" together with the value change, will be animated. Meaning, when other values change at the same time, these will be animated as well:
 
 ![[AnimatedValueGotchaExample.mp4]]
 
@@ -123,7 +123,7 @@ struct AnimatedValueGotchaExample: View {
 }
 ```
 
-c) Apply the animated view modifiers selectively using `.animation` with a view content block (this will prevent the animation being applied to other Views like in example b):
+c) Apply the animated view modifiers selectively inside a view-modifiying-block using `.animation {}`:
 
 ```swift
 // » SwiftUI Garden
