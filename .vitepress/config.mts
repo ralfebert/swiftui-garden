@@ -65,6 +65,11 @@ export default defineConfig({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: {
+      src: "/assets/swift-origami.svg",
+      width: 32,
+      height: 32,
+    },
     nav: [{ text: "Home", link: "/" }],
 
     docFooter: {
