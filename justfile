@@ -16,6 +16,9 @@ FORMATTER_OPTIONS := "--swiftversion 5.10 --disable preferForLoop,unusedArgument
 format:
 	swiftformat {{FORMATTER_OPTIONS}} Views Snippets Animations Navigation
 
+pngcrush:
+	find . -name "*.png" -type f -exec pngcrush -ow {} \;
+
 sync:
 	just format
 	ruby tools/update-xcode-to-md.rb
