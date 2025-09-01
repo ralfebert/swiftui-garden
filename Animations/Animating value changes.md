@@ -2,35 +2,36 @@
 
 For visual changes that are triggered by a changing value in a View, there are three different approaches to animate the change:
 
-a) Wrap the value change in a `withAnimation {}` block:
+a) Apply the animated view modifiers selectively inside a view-modifiying-block using `.animation {}` (preferred method, because it's most precise regarding what animation gets applied to what):
 
 ![[AnimatedValueExample.mp4]]
 
 ```swift
 // » SwiftUI Garden
 // » https://swiftui-garden.com/Animations/Animating+value+changes
-// » https://github.com/ralfebert/swiftui-garden/blob/main/Animations/WithAnimationExample.swift
+// » https://github.com/ralfebert/swiftui-garden/blob/main/Animations/AnimatedValueContentBlockExample.swift
 
 import SwiftUI
 
-struct WithAnimationExample: View {
+struct AnimatedValueContentBlockExample: View {
     @State var isLarge = false
 
     var body: some View {
         VStack {
-            ZStack {
+            HStack {
                 Rectangle()
-                    .fill(Color.red)
+                    .foregroundColor(Color.red)
                     .frame(width: 150, height: 150)
                     .clipShape(.rect(cornerRadius: 30))
-                    .scaleEffect(isLarge ? 1.0 : 0.4)
+                    .animation(.default) { content in
+                        content
+                            .scaleEffect(isLarge ? 1.0 : 0.4)
+                    }
             }
             .frame(width: 180, height: 180)
 
             Button("Animate", systemImage: "play.fill") {
-                withAnimation(.default) {
-                    self.isLarge.toggle()
-                }
+                self.isLarge.toggle()
             }
             .buttonStyle(.borderedProminent)
         }
@@ -38,11 +39,11 @@ struct WithAnimationExample: View {
 }
 
 #Preview {
-    WithAnimationExample()
+    AnimatedValueContentBlockExample()
 }
 ```
 
-b) Use the `.animation()` modifier to trigger an animation when the value changes:
+b) Use the `.animation()` modifier to trigger an animation when a value changes:
 
 ```swift
 // » SwiftUI Garden
@@ -79,7 +80,7 @@ struct AnimatedValueExample: View {
 }
 ```
 
-Watch out for this quirk: Inside the View that is modified by `.animation()`, all changes that happen in the same "view update cycle" together with the value change, will be animated. Meaning, when other values change at the same time, these will be animated as well:
+Watch out for this potentially-surprising-behaviour: Inside the View that is modified by `.animation()`, all changes that happen in the same "view update cycle" together with the value change, will be animated. Meaning, when other values change at the same time, these will be animated as well:
 
 ![[AnimatedValueGotchaExample.mp4]]
 
@@ -123,34 +124,33 @@ struct AnimatedValueGotchaExample: View {
 }
 ```
 
-c) Apply the animated view modifiers selectively inside a view-modifiying-block using `.animation {}`:
+c) Wrap the value change in a `withAnimation {}` block (it's best to avoid this style and consistently use value changes to trigger animations):
 
 ```swift
 // » SwiftUI Garden
 // » https://swiftui-garden.com/Animations/Animating+value+changes
-// » https://github.com/ralfebert/swiftui-garden/blob/main/Animations/AnimatedValueContentBlockExample.swift
+// » https://github.com/ralfebert/swiftui-garden/blob/main/Animations/WithAnimationExample.swift
 
 import SwiftUI
 
-struct AnimatedValueContentBlockExample: View {
+struct WithAnimationExample: View {
     @State var isLarge = false
 
     var body: some View {
         VStack {
-            HStack {
+            ZStack {
                 Rectangle()
-                    .foregroundColor(Color.red)
+                    .fill(Color.red)
                     .frame(width: 150, height: 150)
                     .clipShape(.rect(cornerRadius: 30))
-                    .animation(.linear(duration: 2)) { content in
-                        content
-                            .scaleEffect(isLarge ? 1.0 : 0.4)
-                    }
+                    .scaleEffect(isLarge ? 1.0 : 0.4)
             }
             .frame(width: 180, height: 180)
 
             Button("Animate", systemImage: "play.fill") {
-                self.isLarge.toggle()
+                withAnimation(.default) {
+                    self.isLarge.toggle()
+                }
             }
             .buttonStyle(.borderedProminent)
         }
@@ -158,8 +158,11 @@ struct AnimatedValueContentBlockExample: View {
 }
 
 #Preview {
-    AnimatedValueContentBlockExample()
+    WithAnimationExample()
 }
 ```
 
-For animations that are more than View changes based on value changes, see `PhaseAnimator` and `KeyframeAnimator`, [Controlling the timing and movements of your animations](https://developer.apple.com/documentation/SwiftUI/Controlling-the-timing-and-movements-of-your-animations)
+
+---
+
+For animations that are more than View changes based on value changes, see [[Controlled Animations]].

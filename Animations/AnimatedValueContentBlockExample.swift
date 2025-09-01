@@ -14,7 +14,7 @@ struct AnimatedValueContentBlockExample: View {
                     .foregroundColor(Color.red)
                     .frame(width: 150, height: 150)
                     .clipShape(.rect(cornerRadius: 30))
-                    .animation(.linear(duration: 2)) { content in
+                    .animation(.default) { content in
                         content
                             .scaleEffect(isLarge ? 1.0 : 0.4)
                     }
