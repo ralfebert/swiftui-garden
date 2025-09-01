@@ -2,8 +2,10 @@
 aliases:
   - Overview
 ---
-[SwiftUI Garden](https://swiftui-garden.com) is my [digital garden](https://joelhooks.com/digital-garden) of SwiftUI knowledge and example code that I tinker on and curate while working on my [iOS Apps](https://www.ralfebert.com/apps/).
+<div id="pageinfo"><img src="re.png" width="32" height="32"> <a href="https://ralfebert.com">Ralf Ebert</a> <a href="https://github.com/ralfebert/swiftui-garden/edit/main/About%20SwiftUI%20Garden.md">✏️ edit</a></div>
 
-I use this site to learn and think about SwiftUI, untangled from the actual app project, and to share my learnings and findings with the developer community.
+*SwiftUI Garden* is my [digital garden](https://joelhooks.com/digital-garden) of SwiftUI knowledge and example code that I tinker on and curate while working on my [iOS Apps](https://www.ralfebert.com/apps/).
 
-This site is also an Xcode project and an Obsidian Vault available via [Github](https://github.com/ralfebert/swiftui-garden). See [[Project structure and automation]] for instructions on how to work with the repo.
+I use this space to learn and think about SwiftUI, untangled from the actual app project, and to share my learnings and findings with the developer community.
+
+This site is also an Xcode project and an Obsidian Vault available via [Github](https://github.com/ralfebert/swiftui-garden), see [[Project structure and automation]].
