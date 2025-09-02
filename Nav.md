@@ -10,7 +10,7 @@
 - Misc
 	- [[iOS 26 Issues]]
 	- [[iOS 27 Wishlist]]
-	- [[Working with the SwiftUI Garden]]
+	- [[Gardening Howto]]
 	- [[Various Topics]]
 - Overview
 	- [About SwiftUI Garden](/)
