@@ -1,7 +1,3 @@
-// » SwiftUI Garden
-// » https://swiftui-garden.com/Animations/SwiftUI+Animations
-// » https://github.com/ralfebert/swiftui-garden/blob/main/Animations/RotatingPhaseAnimatorExample.swift
-
 import SwiftUI
 
 struct RotatingPhaseAnimatorExample: View {

@@ -8,7 +8,7 @@ struct ShapeStylesExampleView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                // (colorScheme == .dark ? Color(hue: 0.78, saturation: 0.75, brightness: 0.2) : Color.yellow).ignoresSafeArea()
+                (colorScheme == .dark ? Color(hue: 0.78, saturation: 0.75, brightness: 0.2) : Color.yellow).ignoresSafeArea()
 
                 ScrollView {
                     VStack(alignment: .leading, spacing: 16) {
