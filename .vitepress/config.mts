@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
 import { BiDirectionalLinks } from "@nolebase/markdown-it-bi-directional-links";
 import path from "path";
+import { generateSidebarFromNav } from "./generateSidebarFromNav";
 
 function transformUrl(url: string): string {
   return url.replace(/\s+/g, "-");
@@ -77,50 +78,7 @@ export default defineConfig({
       next: false,
     },
 
-    sidebar: [
-      {
-        text: "Views",
-        items: [
-          {
-            text: "Button",
-            items: [
-              { text: "Button Styles", link: "/Views/Button/Button-Styles" },
-              {
-                text: "Custom Button Styles",
-                link: "/Views/Button/Custom-Button-Styles",
-              },
-            ],
-          },
-          {
-            text: "Text",
-            items: [{ text: "Font Styles", link: "/Views/Text/Font-Styles" }],
-          },
-        ],
-      },
-      {
-        text: "Animations",
-        items: [
-          {
-            text: "Animating value changes",
-            link: "/Animations/Animating-value-changes",
-          },
-          {
-            text: "Controlled Animations",
-            link: "/Animations/Controlled-Animations",
-          },
-        ],
-      },
-      {
-        text: "Misc",
-        items: [{ text: "Various Topics", link: "/Misc/Various-Topics" }],
-      },
-      {
-        text: "Overview",
-        items: [
-          { text: "About SwiftUI Garden", link: "/About-SwiftUI-Garden" },
-        ],
-      },
-    ],
+    sidebar: generateSidebarFromNav(),
 
     socialLinks: [
       { icon: "github", link: "https://github.com/ralfebert/swiftui-garden/" },

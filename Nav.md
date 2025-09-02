@@ -1,0 +1,15 @@
+- Views
+	- Button
+	    - [[Button Styles]]
+	    - [[Custom Button Styles]]
+  - Text
+    - [[Font Styles]]
+- Animations
+	* [[Animating value changes]]
+	- [[Controlled Animations]]
+- Misc
+	- [[iOS 26 Issues]]
+	- [[Working with the SwiftUI Garden]]
+	- [[Various Topics]]
+- Overview
+	- [[About SwiftUI Garden]]

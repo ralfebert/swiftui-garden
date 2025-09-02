@@ -1,4 +1,8 @@
+## Screenshots
+
 View Screenshot can be auto-updated by running `SwiftUIGardenTests`.
+
+## Videos
 
 Videos are recorded manually in the simulator. To crop and re-encode:
 
