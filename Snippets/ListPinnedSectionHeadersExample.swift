@@ -52,11 +52,11 @@ struct ListPinnedSectionHeadersExample: View {
     var body: some View {
         NavigationStack {
             List {
-                ForEach(groupedCities.keys.sorted(), id: \.self) { continent in
+                let continents = groupedCities.keys.sorted()
+                ForEach(continents, id: \.self) { continent in
                     Section(header: Text(continent)) {
                         ForEach(groupedCities[continent] ?? [], id: \.name) { city in
                             Text(city.name)
-                                .padding(.vertical, 4)
                         }
                     }
                 }
