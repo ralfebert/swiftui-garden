@@ -14,7 +14,7 @@ co:
 FORMATTER_OPTIONS := "--swiftversion 5.10 --disable preferForLoop,unusedArguments,blankLinesAtStartOfScope,blankLinesAtEndOfScope,andOperator,redundantSelf,redundantStaticSelf,redundantInternal,preferKeyPath,redundantLet,swiftTestingTestCaseNames"
 
 format:
-	swiftformat {{FORMATTER_OPTIONS}} Views Snippets Animations Navigation
+	swiftformat {{FORMATTER_OPTIONS}} Views Snippets SnippetsIPad Animations Navigation
 
 pngcrush:
 	find . -name "*.png" -type f -exec pngcrush -ow {} \;

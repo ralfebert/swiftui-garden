@@ -2,8 +2,6 @@
 // » https://swiftui-garden.com/Misc/iOS-26/Overlapping-text-for-pinned-section-headers
 // » https://github.com/ralfebert/swiftui-garden/blob/main/Snippets/ListPinnedSectionHeadersExample.swift
 
-// SwiftUI Garden, https://swiftui-garden.com/
-
 import SwiftUI
 
 struct CityCountry {
