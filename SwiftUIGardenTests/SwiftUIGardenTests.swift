@@ -94,4 +94,17 @@ struct SwiftUIGardenTests {
         assertSnapshot(of: view, as: .image)
     }
 
+    @Test func shapeStyles() async throws {
+        let lightView = ShapeStylesExample()
+            .frame(width: screenSize.width, height: screenSize.height)
+            .environment(\.colorScheme, .light)
+
+        let darkView = ShapeStylesExample()
+            .frame(width: screenSize.width, height: screenSize.height)
+            .environment(\.colorScheme, .dark)
+
+        assertSnapshot(of: lightView, as: .image, named: "light")
+        assertSnapshot(of: darkView, as: .image, named: "dark")
+    }
+
 }

@@ -4,6 +4,8 @@
 	    - [[Custom Button Styles]]
   - Text
     - [[Font Styles]]
+  - Shapes
+    - [[Shape Styles]]
 - Animations
 	- [[Animating value changes]]
 	- [[Controlled Animations]]
