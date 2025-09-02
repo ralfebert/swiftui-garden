@@ -5,11 +5,11 @@
   - Text
     - [[Font Styles]]
 - Animations
-	* [[Animating value changes]]
+	- [[Animating value changes]]
 	- [[Controlled Animations]]
 - Misc
 	- [[iOS 26 Issues]]
 	- [[Working with the SwiftUI Garden]]
 	- [[Various Topics]]
 - Overview
-	- [[About SwiftUI Garden]]
+	- [About SwiftUI Garden](/)
