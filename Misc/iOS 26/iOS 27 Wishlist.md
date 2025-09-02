@@ -1,1 +1,0 @@
-* [[Overlapping text for pinned section headers]]
