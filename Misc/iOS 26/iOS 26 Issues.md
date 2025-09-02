@@ -1,3 +1,4 @@
+* [[View Stuck in background during transitions in a nav stack with glass backgrounds]]
 * [[Wiggly SwiftUI Glass Buttons]]
 * [[Standalone Glass Buttons widen to a capsule when tapped]]
 * [[Overlapping text for pinned section headers]]
