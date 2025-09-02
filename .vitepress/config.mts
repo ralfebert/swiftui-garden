@@ -49,7 +49,7 @@ export default defineConfig({
   title: "SwiftUI Garden",
   description: "SwiftUI digital knowledge garden",
   cleanUrls: true,
-  srcExclude: ["**/CLAUDE.md", "/docs/**"],
+  srcExclude: ["**/CLAUDE.md"],
 
   markdown: {
     config: (md) => {
@@ -109,6 +109,10 @@ export default defineConfig({
             link: "/Animations/Controlled-Animations",
           },
         ],
+      },
+      {
+        text: "Misc",
+        items: [{ text: "Various Topics", link: "/Misc/Various-Topics" }],
       },
       {
         text: "Overview",

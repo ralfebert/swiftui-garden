@@ -8,3 +8,8 @@
     width: 32px !important;
     height: 32px !important;
 }
+
+/* Prevent images in tables from being scaled down on mobile */
+.vp-doc table img {
+    max-width: none !important;
+}

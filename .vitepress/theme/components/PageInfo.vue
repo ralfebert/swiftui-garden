@@ -4,8 +4,22 @@ import { computed } from 'vue'
 
 const { page } = useData()
 
+const isLocal = computed(() => {
+  return typeof window !== 'undefined' && window.location.hostname === 'localhost'
+})
+
 const editLink = computed(() => {
   const filePath = page.value.filePath
+  
+  if (isLocal.value) {
+    // Convert file path to Obsidian URI format
+    // Remove .md extension for Obsidian link
+    const obsidianPath = filePath.replace(/\.md$/, '')
+    // URL encode the file path for Obsidian
+    const encodedPath = encodeURIComponent(obsidianPath)
+    return `obsidian://open?vault=swiftui-garden&file=${encodedPath}`
+  }
+  
   return `https://github.com/ralfebert/swiftui-garden/edit/main/${filePath}`
 })
 </script>

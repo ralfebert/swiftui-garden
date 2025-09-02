@@ -1,3 +1,7 @@
+// » SwiftUI Garden
+// » https://swiftui-garden.com/Misc/iOS-26/Wiggly-SwiftUI-Glass-Buttons
+// » https://github.com/ralfebert/swiftui-garden/blob/main/Snippets/JumpyGlassViewExample.swift
+
 import SwiftUI
 
 enum Region: String, CaseIterable {
@@ -46,15 +50,14 @@ struct JumpyGlassViewExample: View {
                     .menuStyle(.button)
                     .buttonStyle(.glass)
                 }
-                
+
                 ToolbarItem(placement: .topBarTrailing) {
                     self.plainLabelButton
                 }
             }
         }
     }
-    
-    
+
     @ViewBuilder
     var plainLabelButton: some View {
         Menu {
@@ -65,7 +68,7 @@ struct JumpyGlassViewExample: View {
             Label("More", systemImage: "ellipsis")
         }
     }
-    
+
     @ViewBuilder
     var labelButton: some View {
         Menu {
@@ -76,7 +79,6 @@ struct JumpyGlassViewExample: View {
             Label("More", systemImage: "ellipsis")
                 .labelStyle(.iconOnly)
                 .imageScale(.large)
-                //.padding()
                 .frame(width: 32, height: 32)
         }
         .menuStyle(.button)
