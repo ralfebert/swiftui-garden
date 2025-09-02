@@ -1,6 +1,12 @@
 * [[View Stuck in background during transitions in a nav stack with glass backgrounds]]
 * [[Wiggly SwiftUI Glass Buttons]]
 * [[Standalone Glass Buttons widen to a capsule when tapped]]
-* [[Overlapping text for pinned section headers]]
-* [[Custom glass sidebar on iPad Workaround]]
 * [[Animation when selected presentationDetent for sheet must change]]
+
+Found workarounds, but proper API would be nice:
+
+* 🛟 [[Custom glass sidebar on iPad Workaround]]
+
+Solved:
+
+* ✅ [[Overlapping text for pinned section headers]]
