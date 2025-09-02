@@ -2,3 +2,4 @@
 * [[Standalone Glass Buttons widen to a capsule when tapped]]
 * [[Overlapping text for pinned section headers]]
 * [[Custom glass sidebar on iPad Workaround]]
+* [[Animation when selected presentationDetent for sheet must change]]
