@@ -9,6 +9,7 @@
 	- [[Controlled Animations]]
 - Misc
 	- [[iOS 26 Issues]]
+	- [[iOS 27 Wishlist]]
 	- [[Working with the SwiftUI Garden]]
 	- [[Various Topics]]
 - Overview

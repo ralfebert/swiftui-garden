@@ -2,7 +2,6 @@
 // » https://swiftui-garden.com/Misc/iOS-26/Standalone-Glass-Buttons-widen-to-a-capsule-when-tapped
 // » https://github.com/ralfebert/swiftui-garden/blob/main/Snippets/StandaloneGlassButtonExample.swift
 
-import MapKit
 import SwiftUI
 
 struct StandaloneGlassButtonExample: View {

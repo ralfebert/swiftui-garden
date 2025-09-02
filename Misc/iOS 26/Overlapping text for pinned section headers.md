@@ -1,4 +1,6 @@
-I think SwiftUI should have better support to handle overlapping text for pinned section headers:
+For a List with .listStyle(.plain), I think SwiftUI should have an easy way to a) un-pin headers and b) to make pinned headers appear safeAreaBar-like, attached to the top bar.
+
+Currently, safeAreaBar or LazyVStack can be used to work around this, see https://developer.apple.com/forums/thread/795159
 
 ![[section-header-issue.png|300]]
 
@@ -10,4 +12,3 @@ I think SwiftUI should have better support to handle overlapping text for pinned
 > 
 > - for .scrollEdgeEffectStyle(.hard, for: .top), the pinned header view should attach to the top bar and get a blurry material background, similar to a safeAreaBar()
 
-safeAreaBar or LazyVStack can be used to work around this, https://developer.apple.com/forums/thread/795159
