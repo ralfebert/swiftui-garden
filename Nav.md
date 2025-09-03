@@ -13,6 +13,5 @@
 	- [[iOS 26 Issues]]
 	- [[iOS 27 Wishlist]]
 	- [[Gardening Howto]]
-	- [[Various Topics]]
 - Overview
 	- [About SwiftUI Garden](/)
