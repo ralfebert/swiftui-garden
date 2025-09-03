@@ -21,19 +21,12 @@ def build_swiftui_garden_url(md_file_path, project_root)
   "https://swiftui-garden.com/#{url_path}"
 end
 
-def build_github_url(swift_file_path, project_root)
-  relative_path = Pathname.new(swift_file_path).relative_path_from(Pathname.new(project_root))
-  "https://github.com/ralfebert/swiftui-garden/blob/main/#{relative_path}"
-end
-
 def create_preamble(md_file_path, swift_file_path, project_root)
   swiftui_url = build_swiftui_garden_url(md_file_path, project_root)
-  github_url = build_github_url(swift_file_path, project_root)
 
   [
     '// » SwiftUI Garden',
     "// » #{swiftui_url}",
-    "// » #{github_url}"
   ].join("\n")
 end
 

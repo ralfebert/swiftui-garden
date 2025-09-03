@@ -1,6 +1,5 @@
 // » SwiftUI Garden
 // » https://swiftui-garden.com/Misc/iOS-26/Overlapping-text-for-pinned-section-headers
-// » https://github.com/ralfebert/swiftui-garden/blob/main/Snippets/ListPinnedSectionHeadersExample.swift
 
 import SwiftUI
 

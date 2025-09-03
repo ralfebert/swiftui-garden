@@ -3,8 +3,9 @@
 * [[Standalone Glass Buttons widen to a capsule when tapped]]
 * [[Animation when selected presentationDetent for sheet must change]]
 
-Found workarounds, but proper API would be nice:
+Found workarounds, but proper API/bugfix would be nice:
 
+* 🛟 [[Touch not cancelled on sheet drag]]
 * 🛟 [[Custom glass sidebar on iPad Workaround]]
 
 Solved:

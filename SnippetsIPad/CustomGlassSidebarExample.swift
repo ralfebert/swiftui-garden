@@ -1,6 +1,5 @@
 // » SwiftUI Garden
 // » https://swiftui-garden.com/Misc/iOS-26/Custom-glass-sidebar-on-iPad-Workaround
-// » https://github.com/ralfebert/swiftui-garden/blob/main/SnippetsIPad/CustomGlassSidebarExample.swift
 
 import MapKit
 import SwiftUI

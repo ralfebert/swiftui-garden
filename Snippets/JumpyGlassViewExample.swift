@@ -1,6 +1,5 @@
 // » SwiftUI Garden
 // » https://swiftui-garden.com/Misc/iOS-26/Wiggly-SwiftUI-Glass-Buttons
-// » https://github.com/ralfebert/swiftui-garden/blob/main/Snippets/JumpyGlassViewExample.swift
 
 import SwiftUI
 

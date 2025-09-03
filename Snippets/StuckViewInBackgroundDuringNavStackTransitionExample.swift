@@ -1,6 +1,5 @@
 // » SwiftUI Garden
 // » https://swiftui-garden.com/Misc/iOS-26/View-Stuck-in-background-during-transitions-in-a-nav-stack-with-glass-backgrounds
-// » https://github.com/ralfebert/swiftui-garden/blob/main/Snippets/StuckViewInBackgroundDuringNavStackTransitionExample.swift
 
 import MapKit
 import SwiftUI

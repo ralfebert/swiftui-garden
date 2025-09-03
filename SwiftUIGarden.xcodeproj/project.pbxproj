@@ -52,6 +52,11 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		BF8A742D2E68223000BDB3F9 /* Extensions */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +85,7 @@
 				BF8A68D82E64E3D100BDB3F9 /* Navigation */,
 				BF8A65102E63964D00BDB3F9 /* Animations */,
 				BF8A63442E6347E900BDB3F9 /* Snippets */,
+				BF8A742D2E68223000BDB3F9 /* Extensions */,
 				BF8A63782E63554C00BDB3F9 /* SwiftUIGardenTests */,
 				BF8A63812E63558A00BDB3F9 /* Frameworks */,
 				BF8A63842E6355F700BDB3F9 /* SwiftUIGarden.xctestplan */,
@@ -123,6 +129,7 @@
 				BF8A63442E6347E900BDB3F9 /* Snippets */,
 				BF8A65102E63964D00BDB3F9 /* Animations */,
 				BF8A68D82E64E3D100BDB3F9 /* Navigation */,
+				BF8A742D2E68223000BDB3F9 /* Extensions */,
 			);
 			name = SwiftUIGarden;
 			packageProductDependencies = (

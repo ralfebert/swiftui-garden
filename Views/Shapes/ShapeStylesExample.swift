@@ -1,8 +1,5 @@
 // » SwiftUI Garden
 // » https://swiftui-garden.com/Views/Shapes/Shape-Styles
-// » https://github.com/ralfebert/swiftui-garden/blob/main/Views/Shapes/ShapeStylesExample.swift
-
-// SwiftUI Garden, https://swiftui-garden.com/
 
 import SwiftUI
 
@@ -11,7 +8,8 @@ struct ShapeStylesExample: View {
 
     var body: some View {
         ZStack {
-            (colorScheme == .dark ? Color(hue: 0.78, saturation: 0.75, brightness: 0.2) : Color.yellow).ignoresSafeArea()
+            (colorScheme == .dark ? Color(hue: 0.78, saturation: 0.75, brightness: 0.2) : Color.yellow)
+                .ignoresSafeArea()
 
             VStack(alignment: .leading, spacing: 16) {
 

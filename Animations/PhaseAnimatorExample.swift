@@ -1,6 +1,5 @@
 // » SwiftUI Garden
 // » https://swiftui-garden.com/Animations/Controlled-Animations
-// » https://github.com/ralfebert/swiftui-garden/blob/main/Animations/PhaseAnimatorExample.swift
 
 import SwiftUI
 

@@ -1,6 +1,5 @@
 // » SwiftUI Garden
 // » https://swiftui-garden.com/Misc/iOS-26/Animation-when-selected-presentationDetent-for-sheet-must-change
-// » https://github.com/ralfebert/swiftui-garden/blob/main/Snippets/SheetAnimationWhenSelectedPresentationDetentMustChangeExample.swift
 
 import SwiftUI
 

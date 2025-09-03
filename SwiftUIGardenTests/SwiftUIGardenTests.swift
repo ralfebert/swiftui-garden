@@ -95,16 +95,37 @@ struct SwiftUIGardenTests {
     }
 
     @Test func shapeStyles() async throws {
-        let lightView = ShapeStylesExample()
-            .frame(width: screenSize.width, height: screenSize.height)
-            .environment(\.colorScheme, .light)
+        func testShapeStyle(style: some ShapeStyle, name: String) {
+            for colorScheme in [ColorScheme.light, .dark] {
+                
+                let view = ZStack {
+                    colorScheme == .dark ? Color(hue: 0.78, saturation: 0.75, brightness: 0.2) : Color.yellow
+                    
+                    Rectangle()
+                        .foregroundStyle(style)
+                        .frame(width: 50, height: 50)
+                }
+                    .frame(width: 100, height: 100)
+                    .environment(\.colorScheme, colorScheme)
 
-        let darkView = ShapeStylesExample()
-            .frame(width: screenSize.width, height: screenSize.height)
-            .environment(\.colorScheme, .dark)
+                assertSnapshot(of: view, as: .image, named: "\(name).\(colorScheme == .light ? "light" : "dark")", testName: "shapeStyles")
+            }
+        }
 
-        assertSnapshot(of: lightView, as: .image, named: "light")
-        assertSnapshot(of: darkView, as: .image, named: "dark")
+        testShapeStyle(style: .primary, name: "primary")
+        testShapeStyle(style: .secondary, name: "secondary")
+        testShapeStyle(style: .tertiary, name: "tertiary")
+        testShapeStyle(style: .quaternary, name: "quaternary")
+        testShapeStyle(style: .quinary, name: "quinary")
+        testShapeStyle(style: .background, name: "background")
+        testShapeStyle(style: .background.secondary, name: "background.secondary")
+        testShapeStyle(style: .background.tertiary, name: "background.tertiary")
+        testShapeStyle(style: .red, name: "red")
+        testShapeStyle(style: .red.secondary, name: "red.secondary")
+        testShapeStyle(style: .red.tertiary, name: "red.tertiary")
+        testShapeStyle(style: .red.quaternary, name: "red.quaternary")
+        testShapeStyle(style: .red.quinary, name: "red.quinary")
+
     }
 
 }
