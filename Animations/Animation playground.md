@@ -1,4 +1,4 @@
-## Rotating a view with .phaseAnimator()
+## Non-stop rotating a view with .phaseAnimator()
 
 <<< @/Animations/RotatingPhaseAnimatorExample.swift
 

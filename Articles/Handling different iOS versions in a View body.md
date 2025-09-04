@@ -21,6 +21,10 @@ if #unavailable(iOS 26) {
 }
 ```
 
+::: warning
+`if #available(iOS 26.0, *) { ... }` will fail to build with a non-beta Xcode while iOS 26 is in beta / until the final Xcode version for iOS 26 is released. Make sure to keep those changes in a separate branch if you need to do maintenance releases in parallel.
+:::
+
 [↗ Swift: Checking API Availability](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/#Checking-API-Availability)
 
 ## `if #available` in modifier chains

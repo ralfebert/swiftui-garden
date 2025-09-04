@@ -12,6 +12,10 @@ struct AnimatedCanvasView: View {
             initialValue: Color.blue,
             trigger: trigger,
             content: { color in
+                /**
+                 Docs say "The content closure updates every frame while animating, so avoid performing any expensive operations directly within content.", but performance seems good enough for animating input values of Canvas drawing.
+                 */
+                
                 Canvas { context, _ in
                     context.fill(
                         Path(ellipseIn: CGRect(x: 50, y: 50, width: 100, height: 100)),
