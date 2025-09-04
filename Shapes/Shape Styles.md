@@ -16,4 +16,4 @@
 | ![[shapeStyles.red-quaternary-light.png\|100]]       | ![[shapeStyles.red-quaternary-dark.png\|100]]       | `.red.quaternary`       |
 | ![[shapeStyles.red-quinary-light.png\|100]]          | ![[shapeStyles.red-quinary-dark.png\|100]]          | `.red.quinary`          |
 
-<<< @/Views/Shapes/ShapeStylesExample.swift
+<<< @/Shapes/ShapeStylesExample.swift
