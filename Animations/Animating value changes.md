@@ -29,6 +29,10 @@ c) Wrap the value change in a `withAnimation {}` block (it's best to avoid this 
 <<< @/Animations/WithAnimationExample.swift{21-23}
 
 
----
+## Pitfalls
 
-For animations that are more than View changes based on value changes, see [[Controlled Animations]].
+The animation modifiers have many very subtle pitfalls. The most conspicuous one for me is that  `.frame()` is only somewhat animatable. Spending the 2 hours working through this fantastic article by [Ole Bergmann](https://mastodon.social/@ole@chaos.social) will save you a lot of trouble: [When .animation animates more (or less) than it’s supposed to](https://oleb.net/2022/animation-modifier-position/)
+
+## Other Animations
+
+For animations that are more than View changes based on value changes, see [[Controlled Animations]]. If it's a View appearing or disappearing, see [[View Transitions]].

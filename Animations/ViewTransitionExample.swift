@@ -1,12 +1,15 @@
+// » SwiftUI Garden
+// » https://swiftui-garden.com/Animations/View-Transitions
+
 import SwiftUI
 
 struct ViewTransitionExample: View {
     @State var shapeVisible = false
-    
+
     var body: some View {
         VStack {
             Toggle("Show shape", isOn: $shapeVisible)
-            
+
             ZStack {
                 if shapeVisible {
                     Capsule()
