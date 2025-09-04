@@ -30,5 +30,5 @@ struct ViewTransitionByIdExample: View {
 }
 
 #Preview {
-    ViewTransitionExample()
+    ViewTransitionByIdExample()
 }
