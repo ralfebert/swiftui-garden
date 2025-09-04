@@ -27,6 +27,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		BF4EE70C2E699DF3007F98E0 /* Shapes */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shapes;
+			sourceTree = "<group>";
+		};
 		BF8A63332E6347E900BDB3F9 /* Views */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Views;
@@ -82,8 +87,9 @@
 			isa = PBXGroup;
 			children = (
 				BF8A63332E6347E900BDB3F9 /* Views */,
-				BF8A68D82E64E3D100BDB3F9 /* Navigation */,
+				BF4EE70C2E699DF3007F98E0 /* Shapes */,
 				BF8A65102E63964D00BDB3F9 /* Animations */,
+				BF8A68D82E64E3D100BDB3F9 /* Navigation */,
 				BF8A63442E6347E900BDB3F9 /* Snippets */,
 				BF8A742D2E68223000BDB3F9 /* Extensions */,
 				BF8A63782E63554C00BDB3F9 /* SwiftUIGardenTests */,
@@ -125,6 +131,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				BF4EE70C2E699DF3007F98E0 /* Shapes */,
 				BF8A63332E6347E900BDB3F9 /* Views */,
 				BF8A63442E6347E900BDB3F9 /* Snippets */,
 				BF8A65102E63964D00BDB3F9 /* Animations */,

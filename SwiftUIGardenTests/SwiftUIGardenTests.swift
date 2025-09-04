@@ -127,5 +127,63 @@ struct SwiftUIGardenTests {
         testShapeStyle(style: .red.quinary, name: "red.quinary")
 
     }
+    
+    @Test func shapeTypes() async throws {
+        let shapes: [(view: AnyView, name: String)] = [
+            (AnyView(Rectangle()
+                .fill(.blue)
+                .frame(width: 80, height: 60)), "rectangle"),
+            (AnyView(Circle()
+                .fill(.blue)
+                .frame(width: 60, height: 60)), "circle"),
+            (AnyView(Ellipse()
+                .fill(.blue)
+                .frame(width: 80, height: 50)), "ellipse"),
+            (AnyView(RoundedRectangle(cornerRadius: 12)
+                .fill(.blue)
+                .frame(width: 80, height: 60)), "roundedRectangle"),
+            (AnyView(RoundedRectangle(cornerSize: CGSize(width: 20, height: 10))
+                .fill(.blue)
+                .frame(width: 80, height: 60)), "roundedRectangleCornerSize"),
+            (AnyView(UnevenRoundedRectangle(
+                cornerRadii: .init(
+                    topLeading: 25,
+                    bottomLeading: 5,
+                    bottomTrailing: 25,
+                    topTrailing: 5
+                ))
+                .fill(.blue)
+                .frame(width: 80, height: 60)), "unevenRoundedRectangle"),
+            (AnyView(Capsule()
+                .fill(.blue)
+                .frame(width: 80, height: 40)), "capsule"),
+            (AnyView(
+                ZStack {
+                    ContainerRelativeShape()
+                        .fill(.white.secondary)
+                        .padding(6)
+                }
+                .background(Color.blue)
+                .clipShape(RoundedRectangle(cornerRadius: 12))
+                .containerShape(RoundedRectangle(cornerRadius: 12))
+                .frame(width: 80, height: 60)
+            ), "containerRelativeShape"),
+            (AnyView(Path { path in
+                path.move(to: CGPoint(x: 40, y: 10))
+                path.addLine(to: CGPoint(x: 70, y: 50))
+                path.addLine(to: CGPoint(x: 10, y: 50))
+                path.closeSubpath()
+            }
+            .fill(.blue)
+            .frame(width: 80, height: 60)), "path")
+        ]
+        
+        for shape in shapes {
+            let view = shape.view
+                .frame(width: 100, height: 80)
+            
+            assertSnapshot(of: view, as: .image, named: shape.name, testName: "shapeTypes")
+        }
+    }
 
 }
