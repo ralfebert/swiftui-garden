@@ -12,8 +12,7 @@
 	- [[Controlled Animations]]
 	- [[Animation playground]]
 - Other Topics
-	- [[iOS 26 Issues]]
-	- [[iOS 27 Wishlist]]
+	- [[iOS Feedback]]
 	- [[Articles]]
 	- [[Gardening Howto]]
 - Overview
