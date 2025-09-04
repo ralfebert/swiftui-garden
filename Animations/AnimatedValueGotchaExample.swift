@@ -26,7 +26,8 @@ struct AnimatedValueGotchaExample: View {
             }
             .buttonStyle(.borderedProminent)
         }
-        // Gotcha: this will also animate the change triggered by isRightLarge as the change happens in the same View update
+        // Gotcha: this will also animate the change triggered by
+        // isRightLarge as the change happens in the same View update
         .animation(.default, value: isLeftLarge)
     }
 }

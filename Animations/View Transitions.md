@@ -4,4 +4,4 @@
 
 ![[transition_example.mp4|300]]
 
-<<< @/Animations/ViewTransitionExample.swift
+<<< @/Animations/ViewTransitionExample.swift{15,19}

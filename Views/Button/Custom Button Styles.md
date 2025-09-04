@@ -8,10 +8,10 @@ A `ButtonStyle` is a reusable definition of the look and feel of a Button. It ge
 
 `PrimitiveButtonStyle` is more customizable and allows to define the interaction behaviour / gestures for the button. [Example](https://www.avanderlee.com/swiftui/swiftui-button-styles/#defining-both-a-custom-button-style-and-interaction)
 
-## Modifying existing button styles
+## Modifying existing button styles {#modifying-existing-button-styles}
 
-The system-defined [[Button Styles]] can be extended by forwarding the implementation to their `.makeBody()` method:
+The system-defined [[Button Styles]] can be extended by forwarding the implementation to their `.makeBody()` method. Although you cannot add modifiers to the Label, but only style the View as returned by the system button style.
 
 ![[modifiedButtonStyle.1.png|300]]
 
-<<< @/Views/Button/ModifiedButtonStyleExample.swift
+<<< @/Views/Button/ModifiedButtonStyleExample.swift{8-9}

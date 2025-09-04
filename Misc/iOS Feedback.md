@@ -23,11 +23,12 @@ Solved:
 
 SwiftUI:
 
-| FB Number  | Topic                                         |
-| ---------- | --------------------------------------------- |
-| FB19252284 | [[Sidebar-like sheet on iPad]]                |
-| FB19359821 | [[Size to fit presentationDetent for sheets]] |
-|            | SwiftUI-native MetalView                      |
+| FB Number  | Topic                                                                                                              |
+| ---------- | ------------------------------------------------------------------------------------------------------------------ |
+| FB19252284 | [[Sidebar-like sheet on iPad]]                                                                                     |
+| FB19359821 | [[Size to fit presentationDetent for sheets]]                                                                      |
+|            | SwiftUI-native MetalView                                                                                           |
+|            | Custom button styles derived from system button styles ([[Custom Button Styles#modifying-existing-button-styles]]) |
 
 Other frameworks:
 

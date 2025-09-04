@@ -6,13 +6,13 @@ a) Apply the animated view modifiers selectively inside a view-modifiying-block 
 
 ![[AnimatedValueExample.mp4|300]]
 
-<<< @/Animations/AnimatedValueContentBlockExample.swift
+<<< @/Animations/AnimatedValueContentBlockExample.swift{16-19}
 
 ## .animation(value:) {#animation_value}
 
 b) Use the `.animation()` modifier to trigger an animation when a value changes:
 
-<<< @/Animations/AnimatedValueExample.swift
+<<< @/Animations/AnimatedValueExample.swift{17}
 
 ### .animation(value:) Pitfall {#animation_value_pitfall}
 
@@ -20,13 +20,13 @@ Watch out for this potentially surprising behaviour: Inside the View that is mod
 
 ![[AnimatedValueGotchaExample.mp4|300]]
 
-<<< @/Animations/AnimatedValueGotchaExample.swift
+<<< @/Animations/AnimatedValueGotchaExample.swift{29-31,24-25}
 
 ## withAnimation {} {#withAnimation}
 
 c) Wrap the value change in a `withAnimation {}` block (it's best to avoid this style and consistently use value changes to trigger animations):
 
-<<< @/Animations/WithAnimationExample.swift
+<<< @/Animations/WithAnimationExample.swift{21-23}
 
 
 ---

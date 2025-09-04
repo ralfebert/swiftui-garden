@@ -58,6 +58,7 @@ export default defineConfig({
       transformInternalLinks(md);
       addFilenameAsH1(md);
     },
+    lineNumbers: true,
   },
 
   rewrites(id) {
