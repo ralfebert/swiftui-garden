@@ -12,9 +12,10 @@
 	- [[Controlled Animations]]
 	- [[View Transitions]]
 	- [[Animation playground]]
-- Other Topics
-	- [[iOS Feedback]]
+- Other
 	- [[Articles]]
-	- [[Gardening Howto]]
-- Overview
+	- [[iOS Screen Resolutions]]
+	- [[iOS Feedback]]
+- Site
 	- [About SwiftUI Garden](/)
+	- [[Gardening Howto]]
