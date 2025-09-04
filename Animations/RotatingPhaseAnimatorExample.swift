@@ -1,3 +1,6 @@
+// » SwiftUI Garden
+// » https://swiftui-garden.com/Animations/Animation-playground
+
 import SwiftUI
 
 struct RotatingPhaseAnimatorExample: View {
