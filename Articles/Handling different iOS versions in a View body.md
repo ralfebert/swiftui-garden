@@ -107,6 +107,10 @@ List {
 
 This has the advantage that you can use the same name for the modifier and can easily find all those places where such a modifier was used. This will be handy if later the old version is not to be supported anymore and the code can be removed.
 
+Common implementations of such modifiers can be found here as package (thanks [@jordanmorgan](https://mastodon.social/@jordanmorgan))
+
+[↗ SwiftUI-Backports](https://github.com/superwall/iOS-Backports)
+
 ## Backlinks, Discussion
 
 * [↗ How to use iOS15-specific modifiers in SwiftUI on iOS 14 and earlier?](https://developer.apple.com/forums/thread/689189#690630022)

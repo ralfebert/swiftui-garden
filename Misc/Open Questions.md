@@ -1,0 +1,1 @@
+* Is there a way to write `if #available(iOS 26, *)` statements so that they compile in a non-Beta Xcode? ([[Handling different iOS versions in a View body#checking-for-ios-version-api-availability]])
