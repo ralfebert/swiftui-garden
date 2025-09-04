@@ -71,7 +71,10 @@ export default defineConfig({
       width: 32,
       height: 32,
     },
-    nav: [{ text: "Home", link: "/" }],
+    nav: [
+      { text: "Home", link: "/" },
+      { text: "Apps", link: "https://www.ralfebert.com/apps/" },
+    ],
 
     docFooter: {
       prev: false,
