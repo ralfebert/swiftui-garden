@@ -10,6 +10,7 @@
 - Animations
 	- [[Animating value changes]]
 	- [[Controlled Animations]]
+	- [[View Transitions]]
 	- [[Animation playground]]
 - Other Topics
 	- [[iOS Feedback]]
