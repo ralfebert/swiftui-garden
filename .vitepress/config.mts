@@ -61,10 +61,6 @@ export default defineConfig({
   },
 
   rewrites(id) {
-    if (id === "Articles/Articles.md") {
-      return "Articles.md";
-    }
-
     return transformUrl(id);
   },
 

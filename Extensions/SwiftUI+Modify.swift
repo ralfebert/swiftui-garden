@@ -5,11 +5,6 @@ import SwiftUI
 
 public extension View {
     func modify(@ViewBuilder transform: (Self) -> some View) -> some View {
-        if #available(iOS 26, *) {
-            content
-                .sectionIndexLabel(Text("..."))
-        } else {
-            content
-        }
+        transform(self)
     }
 }

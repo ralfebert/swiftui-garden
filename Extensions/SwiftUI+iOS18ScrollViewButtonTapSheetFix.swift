@@ -8,6 +8,7 @@ public extension View {
     // on a Button inside a ScrollView inside a .sheet, bug appeared in iOS 18, adding a
     // simultaneous TapGesture prevents the issue. It's enough to stick this once on the
     // outer container that is affected.
+    // Thanks https://mastodon.social/@mergesort@macaw.social
     // https://developer.apple.com/forums/thread/763436?answerId=849716022#849716022
     @available(iOS, deprecated: 26.1, message: "Check if this is still needed for iOS 26.1. If it is, bump this deprecation message to a higher version.")
     @ViewBuilder
