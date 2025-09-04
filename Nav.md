@@ -9,9 +9,10 @@
 - Animations
 	- [[Animating value changes]]
 	- [[Controlled Animations]]
-- Misc
+- Other Topics
 	- [[iOS 26 Issues]]
 	- [[iOS 27 Wishlist]]
+	- [[Articles]]
 	- [[Gardening Howto]]
 - Overview
 	- [About SwiftUI Garden](/)
