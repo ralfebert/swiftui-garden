@@ -19,8 +19,8 @@ struct ViewTransitionByIdExample: View {
                         Text("\(slide)")
                     }
                     .frame(width: 150, height: 60)
-                    .id(slide)
                     .transition(.blurReplace)
+                    .id(slide)
             }
             .frame(height: 200)
             .animation(.default, value: self.slide)
