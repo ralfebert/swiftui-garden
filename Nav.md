@@ -5,7 +5,7 @@
   - Text
     - [[Font Styles]]
 - Shapes
-	- [[Shape Types]]
+	- [[Shapes]]
 	- [[Shape Styles]]
 - Animations
 	- [[Animating value changes]]

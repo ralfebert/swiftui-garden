@@ -1,5 +1,5 @@
 // » SwiftUI Garden
-// » https://swiftui-garden.com/Shapes/Shape-Types
+// » https://swiftui-garden.com/Shapes/Shapes
 
 import SwiftUI
 

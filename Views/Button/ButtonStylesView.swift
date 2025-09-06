@@ -40,7 +40,5 @@ struct ButtonStylesView: View {
 }
 
 #Preview {
-    NavigationStack {
-        ButtonStylesView()
-    }
+    ButtonStylesView()
 }
