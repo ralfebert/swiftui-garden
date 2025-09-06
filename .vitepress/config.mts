@@ -57,6 +57,12 @@ export default defineConfig({
       md.use(BiDirectionalLinks());
       transformInternalLinks(md);
       addFilenameAsH1(md);
+      
+      // Override inline code rendering to use <i> instead of <code>
+      md.renderer.rules.code_inline = (tokens, idx) => {
+        const token = tokens[idx];
+        return `<i>${md.utils.escapeHtml(token.content)}</i>`;
+      };
     },
     lineNumbers: true,
   },
