@@ -50,14 +50,18 @@ export default defineConfig({
   title: "SwiftUI Garden",
   description: "SwiftUI digital knowledge garden",
   cleanUrls: true,
-  srcExclude: ["**/CLAUDE.md"],
+  srcExclude: ["**/CLAUDE.md", "Nav.md", "LICENSE.md"],
+
+  sitemap: {
+    hostname: "https://swiftui-garden.com",
+  },
 
   markdown: {
     config: (md) => {
       md.use(BiDirectionalLinks());
       transformInternalLinks(md);
       addFilenameAsH1(md);
-      
+
       // Override inline code rendering to use <i> instead of <code>
       md.renderer.rules.code_inline = (tokens, idx) => {
         const token = tokens[idx];
