@@ -1,3 +1,7 @@
+---
+date: 2025-09-04
+---
+
 When using a SwiftUI modifier that was added in a new iOS version, you'll get an error in projects that are configured to be compatible with older iOS versions:
 
 ```

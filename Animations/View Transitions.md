@@ -1,3 +1,7 @@
+---
+date: 2025-09-06
+---
+
 ## Default Transition when Views appear/disappear
 
 1) In SwiftUI, when a value change makes a View appear or disappear (= a View is inserted into or deleted from the view hierarchy)...

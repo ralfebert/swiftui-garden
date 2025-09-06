@@ -186,4 +186,77 @@ struct SwiftUIGardenTests {
         }
     }
 
+    @Test func concentricRect() async throws {
+
+        let insetExample = Color.blue.opacity(0.3)
+            .frame(width: 300, height: 200)
+            .overlay(alignment: .leading) {
+                ZStack {
+                    ConcentricRectangle()
+                        .fill(Color.blue.opacity(0.3))
+                }
+                .padding(20)
+
+                ZStack {
+                    ConcentricRectangle()
+                        .fill(Color.blue.opacity(0.3))
+                }
+                .padding(40)
+
+                ZStack {
+                    ConcentricRectangle()
+                        .fill(Color.blue.opacity(0.3))
+                }
+                .padding(60)
+
+            }
+            .clipShape(RoundedRectangle(cornerRadius: 50))
+            .containerShape(RoundedRectangle(cornerRadius: 50))
+
+        assertSnapshot(of: insetExample, as: .image, named: "insetExample", testName: "concentricRect")
+
+        let borderProximityExample =      HStack {
+            ContainerExampleShape()
+                .overlay(alignment: .leading) {
+                    ConcentricAndContainerRelativeRectangle()
+                        .padding(.leading, 8)
+                }
+                .containerShape(RoundedRectangle(cornerRadius: 50))
+            
+            ContainerExampleShape()
+                .overlay(alignment: .topLeading) {
+                    ConcentricAndContainerRelativeRectangle()
+                        .padding(8)
+                }
+                .containerShape(RoundedRectangle(cornerRadius: 50))
+        }
+
+        assertSnapshot(of: borderProximityExample, as: .image, named: "borderProximity", testName: "concentricRect")
+
+
+        let cornerExample =         ContainerExampleShape()
+            .overlay(alignment: .topLeading) {
+                ConcentricAndContainerRelativeRectangle()
+                    .padding(.leading, 8)
+                    .padding(.top, 30)
+            }
+            .containerShape(RoundedRectangle(cornerRadius: 50))
+
+        assertSnapshot(of: cornerExample, as: .image, named: "cornerExample", testName: "concentricRect")
+
+        let uniformExample =         ContainerExampleShape()
+            .overlay(alignment: .topLeading) {
+                ConcentricRectangle(corners: .concentric, isUniform: true)
+                    .fill(Color.red.opacity(0.5))
+                    .frame(width: 120, height: 120)
+                    .padding(.leading, 8)
+                    .padding(.top, 30)
+            }
+            .containerShape(RoundedRectangle(cornerRadius: 50))
+
+        assertSnapshot(of: uniformExample, as: .image, named: "uniformExample", testName: "concentricRect")
+
+    }
+    
+    
 }

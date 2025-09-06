@@ -12,33 +12,33 @@ struct ShapeTypesExample: View {
                         .fill(.blue)
                         .frame(width: 80, height: 60)
                 }
-                
+
                 ShapeRow("Circle()") {
                     Circle()
                         .fill(.blue)
                         .frame(width: 60, height: 60)
                 }
-                
+
                 ShapeRow("Ellipse()") {
                     Ellipse()
                         .fill(.blue)
                         .frame(width: 80, height: 50)
                 }
             }
-            
+
             Section("Rounded") {
                 ShapeRow("RoundedRectangle(cornerRadius: 12)") {
                     RoundedRectangle(cornerRadius: 12)
                         .fill(.blue)
                         .frame(width: 80, height: 60)
                 }
-                
+
                 ShapeRow("RoundedRectangle(cornerSize:)") {
                     RoundedRectangle(cornerSize: CGSize(width: 20, height: 10))
                         .fill(.blue)
                         .frame(width: 80, height: 60)
                 }
-                
+
                 ShapeRow("UnevenRoundedRectangle") {
                     UnevenRoundedRectangle(
                         cornerRadii: .init(
@@ -58,7 +58,7 @@ struct ShapeTypesExample: View {
                         .frame(width: 80, height: 40)
                 }
             }
-            
+
             Section("Container & Custom") {
                 ShapeRow("ContainerRelativeShape()\nConcentricRectangle()") {
                     ZStack {
@@ -71,7 +71,7 @@ struct ShapeTypesExample: View {
                     .containerShape(RoundedRectangle(cornerRadius: 12))
                     .frame(height: 60)
                 }
-                
+
                 ShapeRow("Path { ... }") {
                     Path { path in
                         path.move(to: CGPoint(x: 40, y: 10))
@@ -90,12 +90,12 @@ struct ShapeTypesExample: View {
 struct ShapeRow<Content: View>: View {
     let label: String
     let content: Content
-    
+
     init(_ label: String, @ViewBuilder content: () -> Content) {
         self.label = label
         self.content = content()
     }
-    
+
     var body: some View {
         HStack {
             content
