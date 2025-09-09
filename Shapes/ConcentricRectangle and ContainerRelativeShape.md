@@ -12,7 +12,7 @@ Both need to come near rounded corners of an outer rounded `.containerShape`, bu
 
 ![[concentricRect.borderProximity.png|500]] 
 
-The real difference becomes visible when moving the shape just in one direction a bit. Then, for a `ConcentricRectangle`, the corner radius will be calculated by finding a common center point:
+The real difference becomes visible when moving the shape just in one direction a bit:
 
 ![[concentricRect.cornerExample.png|250]]
 

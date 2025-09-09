@@ -9,7 +9,7 @@
 | FB19252983 | [[Animation when selected presentationDetent for sheet must change]]                                                                  |
 | FB15626685 | [Hyphenation of German text causes truncated text](https://github.com/ralfebert/WrongLineBreaksExample)                               |
 
-Found workarounds, but proper API/bugfix would be nice:
+Found workarounds, should get proper API/bugfix:
 
 | FB Number  | Topic                                                                                    |
 | ---------- | ---------------------------------------------------------------------------------------- |
