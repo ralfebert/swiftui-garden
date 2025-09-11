@@ -5,3 +5,6 @@ SwiftUI:
 Swift:
 
 * Is there a way to write `if #available(iOS 26, *)` statements so that they compile in a non-Beta Xcode? ([[Handling different iOS versions in a View body#checking-for-ios-version-api-availability]])
+* Better way to do simple isCase checks for paramerized enums / get an unparameterized version of the enum?
+
+#openquestions

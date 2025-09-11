@@ -1,0 +1,1 @@
+* [iOS version release date history](https://www.thinkybits.com/blog/iOS-versions/) with comparison "days in beta"

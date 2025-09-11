@@ -38,4 +38,6 @@ Other frameworks/tools:
 | --------- | ------------------------------------------------------------------------------------------------------------------ |
 |           | Pre-warming SFSpeechRecognizer with a prompt text                                                                  |
 | FB7760343 | [Better View introspection for unit testing Swift UI views](https://mastodon.social/@ralfebert/115146012262473215) |
-|           | Run on multiple simulators at the same time                                                                        |
+|           | Xcode: Run on multiple simulators at the same time                                                                 |
+|           | Xcode: Running multiple test targets at once - logs are gone                                                       |
+|           |                                                                                                                    |
