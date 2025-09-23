@@ -6,12 +6,10 @@ import SwiftUI
 struct ButtonStylesView: View {
     var body: some View {
         ZStack {
-            LinearGradient(
-                colors: [.yellow, .orange],
-                startPoint: .leading,
-                endPoint: .trailing
-            )
-            .ignoresSafeArea()
+            Image(.stripe)
+                .resizable(resizingMode: .tile)
+                .opacity(0.5)
+                .ignoresSafeArea()
 
             VStack(alignment: .leading, spacing: 16) {
                 Button(".automatic") {}

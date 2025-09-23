@@ -43,6 +43,7 @@ struct SwiftUIGardenTests {
                 .background(
                     Image(.stripe)
                         .resizable(resizingMode: .tile)
+                        .opacity(0.5)
                         .ignoresSafeArea()
                 )
 

@@ -9,13 +9,16 @@ struct TransitionPlayground: View {
 
     enum TransitionType: String, CaseIterable {
         case opacity = "Opacity (Default)"
+
         case slide = "Slide"
-        case scale = "Scale"
         case move = "Move (Leading)"
+        case push = "Push"
+
+        case scale = "Scale"
+        case blurReplace = "Blur Replace"
+
         case asymmetric = "Asymmetric"
         case combined = "Combined"
-        case blurReplace = "Blur Replace"
-        case push = "Push"
 
         @ViewBuilder func apply(to view: some View) -> some View {
             switch self {
@@ -57,6 +60,14 @@ struct TransitionPlayground: View {
                     showItem.toggle()
                 }
                 .buttonStyle(.borderedProminent)
+            }
+            .onChange(of: self.selectedTransition, initial: false) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    self.showItem.toggle()
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                        self.showItem.toggle()
+                    }
+                }
             }
 
             ZStack {
