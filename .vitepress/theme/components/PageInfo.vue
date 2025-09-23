@@ -24,7 +24,7 @@ const editLink = computed(() => {
   <div id="pageinfo">
     <img src="/assets/re.png" width="30" height="30">
     <a href="https://ralfebert.com">Ralf Ebert</a>
-    <a :href="editLink" style="margin-left: 0.3em;">✏️ edit</a>
+    <a :href="editLink" style="margin-left: 0.3em;" id="pageinfo_edit">✏️ edit</a>
   </div>
 </template>
 
