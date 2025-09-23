@@ -39,14 +39,12 @@ struct SwiftUIGardenTests {
             }
 
             let view = styleApplier(button)
-                .frame(width: 200, height: 70, alignment: .center)
+                .frame(width: 150, height: 70, alignment: .center)
                 .background(
-                    LinearGradient(
-                    colors: [.yellow, .orange],
-                    startPoint: .leading,
-                    endPoint: .trailing
+                    Image(.stripe)
+                        .resizable(resizingMode: .tile)
+                        .ignoresSafeArea()
                 )
-            )
 
             assertSnapshot(of: view, as: .image(drawHierarchyInKeyWindow: name.contains("glass")), named: name, testName: "buttonStyles")
         }
