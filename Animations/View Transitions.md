@@ -5,7 +5,7 @@ A primer on animating the appearing and disappearing of views using transitions 
 
 ![[swiftui-transitions.png|550]]
 
-## How do the .animation and .transition modifiers relate?
+## How are the .animation and .transition modifiers related?
 
 1) When a value change causes a View to appear or disappear (it is inserted into or removed from the view hierarchy), ...
 2) and an animation is applied to the change with `withAnimation` or `.animation` (see [[Animating value changes]]), ...

@@ -24,15 +24,18 @@ Watch out for this potentially surprising behaviour: Inside the View that is mod
 
 ## withAnimation {} {#withAnimation}
 
-c) Wrap the value change in a `withAnimation {}` block (it's best to avoid this style and consistently use value changes to trigger animations):
+c) Wrap the value change in a `withAnimation {}` block:
 
 <<< @/Animations/WithAnimationExample.swift{21-23}
 
-
 ## Pitfalls
 
-The animation modifiers have many very subtle pitfalls. The most conspicuous one for me is that  `.frame()` is only somewhat animatable. Spending the 2 hours working through this fantastic article by [Ole Bergmann](https://mastodon.social/@ole@chaos.social) will save you a lot of trouble: [When .animation animates more (or less) than it’s supposed to](https://oleb.net/2022/animation-modifier-position/)
+The animation modifiers have subtle pitfalls. The most conspicuous one for me is that  `.frame()` is not animatable; one should use `scaleEffect` instead. This article by [Ole Bergmann](https://mastodon.social/@ole@chaos.social) points out a few more pitfalls: [When .animation animates more (or less) than it’s supposed to](https://oleb.net/2022/animation-modifier-position/)
 
 ## Other Animations
 
 For animations that are more than View changes based on value changes, see [[Controlled Animations]]. If it's a View appearing or disappearing, see [[View Transitions]].
+
+## Links
+
+* [SwiftUI docs: Animation](https://developer.apple.com/documentation/swiftui/animation)
