@@ -5,3 +5,7 @@
 ## Animating Canvas with KeyframeAnimator
 
 <<< @/Animations/AnimatedCanvasView.swift
+
+## Animating Views with TimelineView
+
+<<< @/Animations/AnimatedClockTimelineViewExample.swift
