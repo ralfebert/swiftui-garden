@@ -61,14 +61,6 @@ struct TransitionPlayground: View {
                 }
                 .buttonStyle(.borderedProminent)
             }
-            .onChange(of: self.selectedTransition, initial: false) {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                    self.showItem.toggle()
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                        self.showItem.toggle()
-                    }
-                }
-            }
 
             ZStack {
                 if showItem {

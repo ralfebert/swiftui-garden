@@ -1,14 +1,11 @@
 ---
 date: 2025-09-07
 ---
-
-What's the difference between `ConcentricRectangle` (new in iOS 26) and `ContainerRelativeShape`?
-
-Both do the same for an inset rectangle, reducing the corner radius accordingly:
+Both `ConcentricRectangle` (new in iOS 26) and `ContainerRelativeShape` reducing the corner radius accordingly when insetted in a container shape:
 
 ![[concentricRect.insetExample.png|250]]
 
-Both need to come near rounded corners of an outer rounded `.containerShape`, but `ConcentricRectangle` needs to be near an actual corner and will only round that corner by default: (`ConcentricRectangle` in red, `ContainerRelativeShape` in yellow):
+So what's the difference? Both need to come near rounded corners of an outer rounded `.containerShape`, but `ConcentricRectangle` needs to be near an actual corner and will only round that corner by default: (`ConcentricRectangle` in red, `ContainerRelativeShape` in yellow):
 
 ![[concentricRect.borderProximity.png|500]] 
 

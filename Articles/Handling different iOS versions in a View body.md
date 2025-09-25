@@ -5,12 +5,12 @@ date: 2025-09-04
 When using a SwiftUI modifier that was added in a new iOS version, you'll get an error in projects that are configured to be compatible with older iOS versions:
 
 ```
-... is only available in iOS 26.0 or newer
+[...] is only available in iOS 26.0 or newer
 ```
 
-This article shows how to check for the availability of an iOS version in a SwiftUI _View_ body to make use of new View modifiers that have been added in recent iOS releases.
+How to check for the availability of an iOS version in a SwiftUI _View_ body to make use of new View modifiers that have been added in recent iOS releases?
 
-![[swiftui-ios-compatiblity.png|500]]
+![[swiftui-ios-compatiblity.png|550]]
 ## Checking for iOS version / API Availability <apply id="checking-availablity"/>
 
 In regular Swift code, you can use this to check for an iOS version at runtime:
@@ -55,8 +55,8 @@ List {
 ```
 
 ::: warning
-* Do NOT forget to return `content` in the else block or the View will be missing in the old iOS version
-* Do NOT use this for other conditions that can change during runtime (static things like iOS version, "iPhone or iPad" are fine though). Otherwise the View hierarchy will change and state will be thrown away / transitions will break.
+* Always return `content` in the else block or the View will be missing in the old iOS version
+* Only use this for conditions that cannot change at runtime. Static values like iOS version, "iPhone or iPad" are fine. Otherwise the View hierarchy will change and state will be thrown away / transitions will break.
 :::
 
 ## Tweaking values
@@ -75,11 +75,13 @@ public func value<T>(_ ios26: T, ios18: T) -> T {
 
 Then you can go:
 
-`.padding(.trailing, value(0, ios18: 16))`
+```swift
+.padding(.trailing, value(0, ios18: 16))
+```
 
 ## Custom View extensions, .backport
 
-If you need the same modifier in many places, a reusable view extension comes in handy:
+If you need the same modifier in many places, a reusable view extension can be used:
 
 ```swift
 extension View {
@@ -111,9 +113,7 @@ List {
 
 This has the advantage that you can use the same name for the modifier and can easily find all those places where such a modifier was used. This will be handy if later the old version is not to be supported anymore and the code can be removed.
 
-Common implementations of such modifiers can be found here as package (thanks [@jordanmorgan](https://mastodon.social/@jordanmorgan))
-
-[↗ SwiftUI-Backports](https://github.com/superwall/iOS-Backports)
+Common implementations of such modifiers can be found here as package (thanks [@jordanmorgan](https://mastodon.social/@jordanmorgan)): [↗ SwiftUI-Backports](https://github.com/superwall/iOS-Backports)
 
 ## Backlinks, Discussion
 

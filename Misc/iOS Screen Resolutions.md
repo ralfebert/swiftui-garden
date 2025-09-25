@@ -11,13 +11,7 @@ iPhone resolutions:
 
 Table with all the screen resolutions: [iOS Resolution](https://www.ios-resolution.com/)
 
-iOS Device compatibility
+iOS Device compatibility: [iPhone](https://support.apple.com/guide/iphone/iphe3fa5df43/ios), [iPad](https://support.apple.com/guide/ipad/ipad213a25b2/ipados)
 
-* [iOS 18 iPhone](https://support.apple.com/guide/iphone/iphe3fa5df43/ios)
-* [iOS 18 iPad](https://support.apple.com/guide/ipad/ipad213a25b2/ipados)
-* iOS 26 drops these devices:
-	* iPhone XS, XS Max, XR
-	* iPad (7th generation)
-
-Keith Harrison has nice reference images including the safe area sizes:
-* [iPhone 16 Screen Sizes](https://useyourloaf.com/blog/iphone-16-screen-sizes/), [iPhone 13 Screen Sizes](https://useyourloaf.com/blog/iphone-13-screen-sizes/)
+Reference images including the safe area sizes: [iPhone 16](https://useyourloaf.com/blog/iphone-16-screen-sizes/), [iPhone 13](https://useyourloaf.com/blog/iphone-13-screen-sizes/)
+	
