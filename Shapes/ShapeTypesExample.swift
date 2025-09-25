@@ -75,9 +75,9 @@ struct ShapeTypesExample: View {
                 ShapeRow("Path { ... }") {
                     Path { path in
                         path.move(to: CGPoint(x: 40, y: 10))
-                        path.addLine(to: CGPoint(x: 70, y: 50))
-                        path.addLine(to: CGPoint(x: 10, y: 50))
-                        path.closeSubpath()
+                        path.addCurve(to: CGPoint(x: 60, y: 50), control1: CGPoint(x: 75, y: 35), control2: CGPoint(x: 75, y: 45))
+                        path.addLine(to: CGPoint(x: 20, y: 50))
+                        path.addQuadCurve(to: CGPoint(x: 40, y: 10), control: CGPoint(x: 10, y: 25))
                     }
                     .fill(.blue)
                     .frame(width: 80, height: 60)

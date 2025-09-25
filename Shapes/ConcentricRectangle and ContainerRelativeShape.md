@@ -1,7 +1,7 @@
 ---
 date: 2025-09-07
 ---
-Both `ConcentricRectangle` (new in iOS 26) and `ContainerRelativeShape` reducing the corner radius accordingly when insetted in a container shape:
+Both `ConcentricRectangle` (new in iOS 26) and `ContainerRelativeShape` reduce the corner radius accordingly when insetted in a container shape:
 
 ![[concentricRect.insetExample.png|250]]
 
