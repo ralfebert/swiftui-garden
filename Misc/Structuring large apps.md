@@ -16,3 +16,7 @@
 	* "What does this thing need to get it's job done?" is the important question
 * All this means more boilerplate which is worth it for having a clear simple flow that's easy to follow. Code that's easy to reason about with boilerplate to enable this clarity is better than a compact but knotted ball of wool
 * Enables: Dead-simple and powerful .fixtures struct pattern for Previews and Unit Tests
+
+## Backlinks, Discussion
+
+* [Discussion about structure for SwiftUI projects](https://mastodon.social/@bzf/115292975087559884)

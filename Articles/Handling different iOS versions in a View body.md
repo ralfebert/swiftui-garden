@@ -56,7 +56,7 @@ List {
 
 ::: warning
 * Always return `content` in the else block or the View will be missing in the old iOS version
-* Only use this for conditions that cannot change at runtime. Static values like iOS version, "iPhone or iPad" are fine. Otherwise the View hierarchy will change and state will be thrown away / transitions will break.
+* Only use this for conditions that cannot change at runtime. Static values like iOS version, "iPhone or iPad" are fine. Otherwise the View hierarchy will change and state will be thrown away / transitions will break. See also: [[SwiftUI Conditional Modifier Issue]]
 :::
 
 ## Tweaking values

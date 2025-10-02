@@ -2,6 +2,7 @@
 * [[Unit Testing with Swift Testing]]
 * [[Structuring large apps]]
 * [[Doing Mockups in SwiftUI]]
+* [[SwiftUI Conditional Modifier Issue]]
 
 ### Ideas
 
