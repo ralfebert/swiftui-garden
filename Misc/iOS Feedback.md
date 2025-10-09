@@ -11,11 +11,12 @@
 
 Found workarounds, should get proper API/bugfix:
 
-| FB Number  | Topic                                                                                    |
-| ---------- | ---------------------------------------------------------------------------------------- |
-| FB19016414 | 🛟 [[View Stuck in background during transitions in a nav stack with glass backgrounds]] |
-| FB18927179 | 🛟 [[Touch not cancelled on sheet drag]]                                                 |
-| FB19252414 | 🛟 [[Custom glass sidebar on iPad Workaround]]                                           |
+| FB Number  | Topic                                                                                                                                                      |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| FB19016414 | 🛟 [[View Stuck in background during transitions in a nav stack with glass backgrounds]]                                                                   |
+| FB18927179 | 🛟 [[Touch not cancelled on sheet drag]]                                                                                                                   |
+| FB19252414 | 🛟 [[Custom glass sidebar on iPad Workaround]]                                                                                                             |
+| FB18574624 | 🛟 [Public auto-generated Color, Image constants in Swift packages](https://forums.swift.org/t/xcode15-generated-imageresource-with-public-access/67293/9) |
 
 Solved:
 
@@ -40,4 +41,4 @@ Other frameworks/tools:
 | FB7760343 | [Better View introspection for unit testing Swift UI views](https://mastodon.social/@ralfebert/115146012262473215) |
 |           | Xcode: Run on multiple simulators at the same time                                                                 |
 |           | Xcode: Running multiple test targets at once - logs are gone                                                       |
-|           |                                                                                                                    |
+

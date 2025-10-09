@@ -2,7 +2,6 @@ SwiftUI:
 
 * NavigationStack says 'don't put models in the path' / keep the navPath struct's lightweight - but where to put state of the Views in navigation stack (so it's accessible from the outside, vs. @State) + the pattern of using case .foo(FooStep) is cumbersome when modifying state.
 * Is there a way to fix the accent color in Previews for Swift packages
-* Public Color/Image Constants generated for assets in Swift packages
 
 
 
