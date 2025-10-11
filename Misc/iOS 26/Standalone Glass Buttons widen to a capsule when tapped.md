@@ -4,4 +4,8 @@
 
 ![[glass_button_capsule.png|150]]
 
+::: info
+This seems to be fixed in iOS 26.1 Beta 2.
+:::
+
 <<< @/Snippets/StandaloneGlassButtonExample.swift

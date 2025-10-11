@@ -3,6 +3,10 @@
 >
 > When a glass button is used for a Menu (standalone - it works when it’s in the NavStack toolbar), when the Menu is closed, the Button is shown mis-aligned and without shadow for a little while, and snaps back to it’s correct position+shadow enabled after that.
 
+::: info
+Still happening in iOS 26.1 Beta 2
+:::
+
 <video controls src="https://box-swiftui-garden.fra1.cdn.digitaloceanspaces.com/wiggly-glass-buttons.mp4" width="300"/>
 
 <<< @/Snippets/JumpyGlassViewExample.swift
