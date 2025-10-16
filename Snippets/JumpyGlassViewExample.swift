@@ -3,17 +3,13 @@
 
 import SwiftUI
 
-enum Region: String, CaseIterable {
-    case world
-    case africa
-    case americas
-    case asia
-    case europe
-    case oceania
-}
-
 struct JumpyGlassViewExample: View {
-    @State var region = Region.world
+    @State var region = Region.asia
+
+    enum Region: String, CaseIterable {
+        case asia
+        case americas
+    }
 
     var body: some View {
         NavigationStack {

@@ -28,6 +28,7 @@ SwiftUI:
 | FB19252284 | [[Sidebar-like sheet on iPad]]                                                                                     |
 | FB19359821 | [[Size to fit presentationDetent for sheets]]                                                                      |
 | FB19252983 | [[Animation when selected presentationDetent for sheet must change]]                                               |
+|            | [[Xcode - Run SwiftUI Preview in Simulator]]                                                                       |
 |            | SwiftUI-native MetalView                                                                                           |
 |            | Custom button styles derived from system button styles ([[Custom Button Styles#modifying-existing-button-styles]]) |
 
@@ -36,7 +37,7 @@ Other frameworks/tools:
 | FB Number  | Topic                                                                                                                                                   |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | FB18574624 | [Public auto-generated Color, Image constants in Swift packages](https://forums.swift.org/t/xcode15-generated-imageresource-with-public-access/67293/9) |
-|            | Pre-warming SFSpeechRecognizer with a prompt text                                                                                                       |
+| FB20692995 | [[API to  provide context for SFSpeechRecognizer with a context phrase]]                                                                                |
 | FB7760343  | [Better View introspection for unit testing Swift UI views](https://mastodon.social/@ralfebert/115146012262473215)                                      |
 |            | Xcode: Run on multiple simulators at the same time                                                                                                      |
 |            | Xcode: Running multiple test targets at once - logs are gone                                                                                            |
