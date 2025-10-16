@@ -21,69 +21,45 @@ struct JumpyGlassViewExample: View {
                 Color.yellow
                     .ignoresSafeArea()
                 VStack {
-                    self.labelButton
+                    self.continentMenu
+                        .border(Color.red)
+
                     Spacer()
                 }
             }
             .navigationTitle("Example")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .principal) {
-                    Menu(
-                        content: {
-                            ForEach(Region.allCases, id: \.self) { region in
-                                Button(region.rawValue) {
-                                    self.region = region
-                                }
-                            }
-                        },
-                        label: {
-                            HStack {
-                                Text(region.rawValue.capitalized)
-                                Image(systemName: "chevron.up.chevron.down")
-                                    .imageScale(.small)
-                            }
-                            .fontWeight(.semibold)
-                        }
-                    )
+                ToolbarItem(placement: .title) {
+                    self.continentMenu
                     .menuStyle(.button)
                     .buttonStyle(.glass)
-                }
-
-                ToolbarItem(placement: .topBarTrailing) {
-                    self.plainLabelButton
                 }
             }
         }
     }
 
     @ViewBuilder
-    var plainLabelButton: some View {
-        Menu {
-            Button("Option 1", action: {})
-            Button("Option 2", action: {})
-            Button("Option 3", action: {})
-        } label: {
-            Label("More", systemImage: "ellipsis")
-        }
+    var continentMenu: some View {
+        Menu(
+            content: {
+                ForEach(Region.allCases, id: \.self) { region in
+                    Button(region.rawValue) {
+                        self.region = region
+                    }
+                }
+            },
+            label: {
+                HStack {
+                    Text(region.rawValue.capitalized)
+                    Image(systemName: "chevron.up.chevron.down")
+                        .imageScale(.small)
+                }
+                .fontWeight(.semibold)
+            }
+        )
     }
-
-    @ViewBuilder
-    var labelButton: some View {
-        Menu {
-            Button("Option 1", action: {})
-            Button("Option 2", action: {})
-            Button("Option 3", action: {})
-        } label: {
-            Label("More", systemImage: "ellipsis")
-                .labelStyle(.iconOnly)
-                .imageScale(.large)
-                .frame(width: 32, height: 32)
-        }
-        .menuStyle(.button)
-        .buttonStyle(.glass)
-        .buttonBorderShape(.circle)
-    }
+    
 }
 
 #Preview {

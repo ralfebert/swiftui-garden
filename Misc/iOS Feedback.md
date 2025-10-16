@@ -2,9 +2,9 @@
 
 | FB Number  | Topic                                                                                                                                 |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-|            | [Glass backgrounds coming in a little darker and then jumping to correct look](https://mastodon.social/@ralfebert/115173213715746876) |
 | FB19434107 | [[Wiggly SwiftUI Glass Buttons]]                                                                                                      |
 | FB15626685 | [Hyphenation of German text causes truncated text](https://github.com/ralfebert/WrongLineBreaksExample)                               |
+|            | [Glass backgrounds coming in a little darker and then jumping to correct look](https://mastodon.social/@ralfebert/115173213715746876) |
 
 Found workarounds, should get proper API/bugfix:
 
