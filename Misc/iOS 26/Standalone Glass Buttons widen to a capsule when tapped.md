@@ -6,6 +6,8 @@
 
 ::: info
 This seems to be fixed in iOS 26.1 Beta 2.
+
+[Workaround](https://iosdev.space/@alpennec/115389642621911021)
 :::
 
 <<< @/Snippets/StandaloneGlassButtonExample.swift
