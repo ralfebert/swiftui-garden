@@ -4,7 +4,7 @@
 > When a glass button is used for a Menu (standalone - it works when it’s in the NavStack toolbar), when the Menu is closed, the Button is shown mis-aligned and without shadow for a little while, and snaps back to it’s correct position+shadow enabled after that.
 
 ::: info
-Still happening in iOS 26.1 Beta 3.
+Still happening in iOS 26.1 Beta 4.
 
 This issue also occurs with a plain Button.
 
