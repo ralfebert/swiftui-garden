@@ -24,13 +24,14 @@ Solved:
 
 SwiftUI:
 
-| FB Number  | Topic                                                                                                              |
-| ---------- | ------------------------------------------------------------------------------------------------------------------ |
-| FB19252284 | [[Sidebar-like sheet on iPad]]                                                                                     |
-| FB19359821 | [[Size to fit presentationDetent for sheets]]                                                                      |
-| FB19252983 | [[Animation when selected presentationDetent for sheet must change]]                                               |
-|            | [[Xcode - Run SwiftUI Preview in Simulator]]                                                                       |
-|            | SwiftUI-native MetalView                                                                                           |
+| FB Number  | Topic                                                                |
+| ---------- | -------------------------------------------------------------------- |
+| FB19252284 | [[Sidebar-like sheet on iPad]]                                       |
+| FB19359821 | [[Size to fit presentationDetent for sheets]]                        |
+| FB19252983 | [[Animation when selected presentationDetent for sheet must change]] |
+|            | Async ShareLink / .shareSheet(item:, isPresented:)-style API         |
+|            | [[Xcode - Run SwiftUI Preview in Simulator]]                         |
+|            | SwiftUI-native MetalView                                             |
 
 Other frameworks/tools:
 
