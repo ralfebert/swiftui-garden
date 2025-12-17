@@ -1,5 +1,7 @@
 For visual changes that are triggered by a changing value in a View, there are three different approaches to animate the change:
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RsK5R-c9tUc?si=RMXSfqsETjyHK3vQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## `.animation {}` {#animation_block}
 
 a) Apply the animated view modifiers selectively inside a view-modifiying-block using `.animation {}` (preferred method, because it's most precise regarding what animation gets applied to what):
